@@ -1132,35 +1132,22 @@ footer {
    RESPONSIVE
 ═══════════════════════════════════════════════════════════ */
 
-/* Large tablets */
+/* ── Wide tablet: grids and footer reflow ────────────────── */
 @media (max-width: 1024px) {
-  .topics-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .organizers-grid {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  }
-  .cfp-bottom {
-    grid-template-columns: 1fr;
-  }
-  .footer-inner {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
-  .footer-brand { grid-column: 1 / -1; }
+  .topics-grid     { grid-template-columns: repeat(2, 1fr); }
+  .organizers-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+  .cfp-bottom      { grid-template-columns: 1fr; }
+  .footer-inner    { grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .footer-brand    { grid-column: 1 / -1; }
 }
 
-/* Tablets */
-@media (max-width: 768px) {
-  :root { --px: 1.25rem; }
-
-  /* Nav */
+/* ── Hamburger: collapses nav before 6 items overflow ────── */
+@media (max-width: 860px) {
   .nav-toggle { display: flex; }
   .nav-links {
     display: none;
     position: absolute;
-    top: 68px;
-    left: 0; right: 0;
+    top: 68px; left: 0; right: 0;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
@@ -1169,6 +1156,7 @@ footer {
     -webkit-backdrop-filter: blur(16px);
     padding: 1rem;
     border-bottom: 1px solid rgba(255,255,255,.1);
+    z-index: 999;
   }
   .nav-links.open { display: flex; }
   .nav-links a {
@@ -1182,26 +1170,24 @@ footer {
     border-bottom-color: var(--c-border);
   }
   #navbar.scrolled .nav-links a { color: var(--c-text); }
+}
 
-  /* Hero */
+/* ── Tablet ──────────────────────────────────────────────── */
+@media (max-width: 768px) {
   .hero-content { padding-top: 100px; }
 
-  /* About */
-  .about-pills { grid-template-columns: repeat(2, 1fr); }
-
-  /* Topics */
   .topics-grid { grid-template-columns: 1fr; }
 
-  /* Speakers */
+  /* Single-column speakers — bios are too long for 2 narrow cols */
   .speakers-grid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 100%;
+    grid-template-columns: 1fr;
+    max-width: 640px;
+    margin-inline: auto;
   }
 
-  /* Organizers */
-  .organizers-grid { grid-template-columns: repeat(3, 1fr); }
+  /* auto-fill naturally breaks to 2 cols on small phones (~375px) */
+  .organizers-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
 
-  /* Footer */
   .footer-inner {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -1214,23 +1200,33 @@ footer {
   }
 }
 
-/* Mobile */
+/* ── Mobile ──────────────────────────────────────────────── */
 @media (max-width: 480px) {
   .hero-wordmark { font-size: clamp(3.5rem, 18vw, 5rem); }
+  .hero-content  { padding-top: 90px; }
   .hero-cta .btn { justify-content: center; }
 
-  .about-pills { grid-template-columns: 1fr; }
+  /* Disable justify on narrow columns — creates ugly spacing */
+  .about-text p,
+  .topic-card p,
+  .speaker-bio p,
+  .cfp-guidelines li { text-align: left; }
 
+  /* CFP boxes: tighter padding */
+  .cfp-guidelines,
+  .cfp-dates { padding: 1.25rem; }
+
+  /* Speakers */
   .speakers-grid { grid-template-columns: 1fr; }
+  .speaker-photo { width: 140px; height: 140px; }
 
-  .organizers-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
-
-  .timeline { padding-left: 1.75rem; }
-  .tl-dot { left: -2.4rem; width: 32px; height: 32px; font-size: .7rem; }
+  /* Organizers: explicit 2 cols as fallback */
+  .org-photo { width: 110px; height: 110px; }
+  .org-card  { padding: 1.75rem 1rem 1.5rem; }
 }
 
-/* Very small screens */
+/* ── Very small screens ──────────────────────────────────── */
 @media (max-width: 360px) {
   .hero-wordmark { font-size: 3rem; }
-  .organizers-grid { grid-template-columns: 1fr; }
+  .org-photo     { width: 90px; height: 90px; }
 }
