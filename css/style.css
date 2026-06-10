@@ -80,7 +80,7 @@ button { cursor: pointer; font-family: inherit; }
 
 .section-header {
   text-align: center;
-  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
 }
 
 .section-tag {
@@ -474,6 +474,7 @@ button { cursor: pointer; font-family: inherit; }
   margin-bottom: 1rem;
   font-size: .975rem;
   line-height: 1.75;
+  text-align: justify;
 }
 .about-text p:last-child { margin-bottom: 0; }
 
@@ -531,6 +532,7 @@ button { cursor: pointer; font-family: inherit; }
 .topics-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 1.25rem;
   gap: 1.25rem;
   margin-bottom: 2.5rem;
 }
@@ -571,13 +573,14 @@ button { cursor: pointer; font-family: inherit; }
   font-size: .85rem;
   color: var(--c-text-muted);
   line-height: 1.65;
+  text-align: justify;
 }
 
 .cfp-bottom {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 .cfp-guidelines,
@@ -603,23 +606,26 @@ button { cursor: pointer; font-family: inherit; }
 .cfp-guidelines ul {
   display: flex;
   flex-direction: column;
-  gap: .6rem;
+  gap: .55rem;
 }
 .cfp-guidelines li {
-  display: flex;
-  align-items: flex-start;
-  gap: .6rem;
+  position: relative;
+  padding-left: 1.4rem;
   font-size: .875rem;
   color: rgba(255,255,255,.65);
-  line-height: 1.5;
+  line-height: 1.6;
+  text-align: justify;
 }
 .cfp-guidelines li i {
+  position: absolute;
+  left: 0;
+  top: .35rem;
   color: var(--c-cyan);
-  font-size: .7rem;
-  margin-top: .3rem;
-  flex-shrink: 0;
+  font-size: .65rem;
 }
-.cfp-guidelines strong { color: rgba(255,255,255,.9); }
+.cfp-guidelines strong { color: rgba(255,255,255,.92); }
+.cfp-guidelines a { color: var(--c-cyan); text-decoration: underline; text-underline-offset: 3px; }
+.cfp-guidelines a:hover { color: #fff; }
 
 .dates-list {
   display: flex;
@@ -738,8 +744,6 @@ button { cursor: pointer; font-family: inherit; }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  max-width: 600px;
-  margin-inline: auto;
 }
 
 .speaker-card {
@@ -760,7 +764,7 @@ button { cursor: pointer; font-family: inherit; }
 }
 
 .speaker-photo {
-  width: 140px; height: 140px;
+  width: 180px; height: 180px;
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 1.25rem;
@@ -775,16 +779,34 @@ button { cursor: pointer; font-family: inherit; }
 }
 
 .speaker-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 800;
   color: var(--c-text);
   margin-bottom: .4rem;
 }
 .speaker-org {
-  font-size: .85rem;
+  font-size: .9rem;
   color: var(--c-text-muted);
   line-height: 1.4;
+  margin-bottom: 1.25rem;
 }
+.speaker-bio {
+  width: 100%;
+}
+.speaker-bio p {
+  font-size: .875rem;
+  color: var(--c-text-muted);
+  line-height: 1.7;
+  margin-bottom: .75rem;
+  text-align: justify;
+}
+.speaker-bio p:last-child { margin-bottom: 0; }
+.speaker-bio a {
+  color: var(--c-blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.speaker-bio a:hover { color: var(--c-cyan); }
 
 /* ═══════════════════════════════════════════════════════════
    SCHEDULE
@@ -864,8 +886,8 @@ button { cursor: pointer; font-family: inherit; }
 ═══════════════════════════════════════════════════════════ */
 .organizers-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
 }
 
 .org-card {
@@ -876,7 +898,7 @@ button { cursor: pointer; font-family: inherit; }
   background: var(--c-white);
   border: 1px solid var(--c-border);
   border-radius: var(--r-lg);
-  padding: 1.5rem 1rem 1.25rem;
+  padding: 2.5rem 1.5rem 2rem;
   transition: var(--trans);
 }
 .org-card:hover {
@@ -886,12 +908,12 @@ button { cursor: pointer; font-family: inherit; }
 }
 
 .org-photo {
-  width: 88px; height: 88px;
+  width: 160px; height: 160px;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: .85rem;
-  border: 2px solid var(--c-border);
-  box-shadow: var(--sh-sm);
+  margin-bottom: 1.25rem;
+  border: 3px solid var(--c-border);
+  box-shadow: var(--sh-md);
   flex-shrink: 0;
 }
 .org-photo img {
@@ -901,14 +923,14 @@ button { cursor: pointer; font-family: inherit; }
 }
 
 .org-card h3 {
-  font-size: .9rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 800;
   color: var(--c-text);
-  margin-bottom: .3rem;
+  margin-bottom: .4rem;
   line-height: 1.25;
 }
 .org-inst {
-  font-size: .77rem;
+  font-size: .875rem;
   color: var(--c-text-muted);
   line-height: 1.4;
 }
@@ -1045,6 +1067,8 @@ footer {
   gap: .5rem;
 }
 .footer-bottom strong { color: rgba(255,255,255,.5); }
+.footer-eccv-logo { height: 28px; width: auto; opacity: .75; transition: opacity var(--trans); }
+.footer-eccv-logo:hover { opacity: 1; }
 
 /* ─── Back to top ───────────────────────────────────────── */
 #backToTop {
@@ -1112,7 +1136,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   .organizers-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
   .cfp-bottom {
     grid-template-columns: 1fr;
@@ -1197,7 +1221,7 @@ footer {
 
   .speakers-grid { grid-template-columns: 1fr; }
 
-  .organizers-grid { grid-template-columns: repeat(2, 1fr); }
+  .organizers-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
 
   .timeline { padding-left: 1.75rem; }
   .tl-dot { left: -2.4rem; width: 32px; height: 32px; font-size: .7rem; }

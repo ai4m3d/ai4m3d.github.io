@@ -7,7 +7,7 @@
   <meta property="og:title" content="AI4M3D @ ECCV 2026">
   <meta property="og:description" content="Workshop on Artificial Intelligence for Medical 3D Vision at ECCV 2026.">
   <meta property="og:type" content="website">
-  <title>AI4M3D — Artificial Intelligence for Medical 3D Vision @ ECCV 2026</title>
+  <title>AI4M3D</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,6 +31,7 @@
     </button>
     <ul class="nav-links" id="navLinks" role="list">
       <li><a href="#about">About</a></li>
+      <li><a href="#topics">Topics</a></li>
       <li><a href="#cfp">Call for Papers</a></li>
       <li><a href="#speakers">Speakers</a></li>
       <li><a href="#schedule">Schedule</a></li>
@@ -62,7 +63,7 @@
     <p class="hero-title-long">Artificial Intelligence for Medical 3D Vision</p>
     <div class="hero-date">
       <i class="fas fa-calendar-days"></i>
-      September 3, 2026 &nbsp;·&nbsp; Half-day Workshop
+      September 8–9, 2026
     </div>
     <div class="hero-cta">
       <a href="#cfp" class="btn btn-hero-primary">
@@ -87,53 +88,55 @@
 
     <div class="about-text" data-reveal>
       <p>Medical 3D vision lies at the intersection of artificial intelligence, computer vision, computer graphics, and medical imaging. It is becoming increasingly crucial for diagnosis, surgical planning, simulation, and personalised healthcare.</p>
-      <p>Recent advances in deep learning, generative models, neural rendering, and vision-language approaches have enabled significant progress in 3D reconstruction and generation, novel view synthesis, and immersive visualisation of medical data — including XR-supported applications and neuroscience approaches that reconstruct 3D representations from neural data.</p>
-      <p>This workshop aims to highlight innovative, AI-driven techniques for 3D vision in the medical field and to encourage discussion about the unique challenges in this domain, including data scarcity, noise, anatomical variability, robustness, interpretability, and clinical reliability — while building a lasting community around this emerging field.</p>
+      <p>Recent advances in deep learning, generative models, neural rendering, and vision-language approaches have enabled significant progress in 3D reconstruction, 3D generation, novel view synthesis, and the immersive visualization of medical data, including XR-supported applications. This also extends to neuroscience, with approaches that reconstruct 3D representations from neural data.</p>
+      <p>The goal of this workshop is to highlight innovative, AI-driven techniques for 3D vision in the medical field and encourage discussion about the unique challenges in this field, including data scarcity, noise, anatomical variability, robustness, interpretability, and clinical reliability.</p>
+      <p>This workshop aims not only to serve as a venue for presenting work in this area but also to build a community and share information in this new field.</p>
     </div>
+  </div>
+</section>
 
-    <div class="about-pills" data-reveal>
-      <div class="pill-card">
-        <i class="fas fa-cube"></i>
-        <div>
-          <strong>3D Reconstruction</strong>
-          <span>&amp; Neural Rendering</span>
-        </div>
-      </div>
-      <div class="pill-card">
-        <i class="fas fa-wand-magic-sparkles"></i>
-        <div>
-          <strong>Generative AI</strong>
-          <span>for Medical 3D Data</span>
-        </div>
-      </div>
-      <div class="pill-card">
-        <i class="fas fa-language"></i>
-        <div>
-          <strong>Vision-Language</strong>
-          <span>Models for 3D</span>
-        </div>
-      </div>
-      <div class="pill-card">
-        <i class="fas fa-vr-cardboard"></i>
-        <div>
-          <strong>XR Visualisation</strong>
-          <span>&amp; Simulation</span>
-        </div>
-      </div>
-      <div class="pill-card">
-        <i class="fas fa-network-wired"></i>
-        <div>
-          <strong>Foundation Models</strong>
-          <span>&amp; Self-Supervised Learning</span>
-        </div>
-      </div>
-      <div class="pill-card">
-        <i class="fas fa-database"></i>
-        <div>
-          <strong>Sparse &amp; Noisy Data</strong>
-          <span>Clinical Challenges</span>
-        </div>
-      </div>
+<!-- ═══════════════════════════════════════════
+     TOPICS
+═══════════════════════════════════════════ -->
+<section id="topics" class="section section-alt">
+  <div class="container">
+    <header class="section-header" data-reveal>
+      <span class="section-tag">Topics</span>
+      <h2 class="section-title">Workshop Topics</h2>
+      <p class="section-subtitle">We invite original, previously unpublished work addressing, but not limited to, the following topics:</p>
+    </header>
+
+    <div class="topics-grid">
+      <article class="topic-card" data-reveal>
+        <div class="topic-icon"><i class="fas fa-cube"></i></div>
+        <h3>AI for medical 3D reconstruction and neural rendering</h3>
+        <p>AI-driven methods for medical 3D reconstruction, NeRF and Gaussian Splatting approaches, and neural rendering techniques applied to clinical imaging data.</p>
+      </article>
+      <article class="topic-card" data-reveal>
+        <div class="topic-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+        <h3>Generative AI for medical and neural 3D data</h3>
+        <p>Diffusion models, GANs, and other generative architectures for synthesising, augmenting, or simulating medical and neural 3D data.</p>
+      </article>
+      <article class="topic-card" data-reveal>
+        <div class="topic-icon"><i class="fas fa-language"></i></div>
+        <h3>Vision-language models for 3D understanding</h3>
+        <p>VLMs and multi-modal foundation models for 3D understanding and grounding of medical images, enabling richer cross-modal representations.</p>
+      </article>
+      <article class="topic-card" data-reveal>
+        <div class="topic-icon"><i class="fas fa-vr-cardboard"></i></div>
+        <h3>XR-supported visualization and simulation</h3>
+        <p>Extended reality (AR/VR/MR) tools for immersive medical visualisation, surgical training, simulation, and patient-specific planning.</p>
+      </article>
+      <article class="topic-card" data-reveal>
+        <div class="topic-icon"><i class="fas fa-network-wired"></i></div>
+        <h3>Foundation and self-supervised models for medical 3D vision</h3>
+        <p>Large-scale pre-training and self-supervised learning strategies adapted for medical 3D vision with limited or no labelled data.</p>
+      </article>
+      <article class="topic-card" data-reveal>
+        <div class="topic-icon"><i class="fas fa-database"></i></div>
+        <h3>Learning from sparse, noisy, or heterogeneous medical data</h3>
+        <p>Methods that address the inherent clinical challenges of data scarcity, imaging noise, anatomical variability, and multi-modal heterogeneity.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -141,80 +144,41 @@
 <!-- ═══════════════════════════════════════════
      CALL FOR PAPERS
 ═══════════════════════════════════════════ -->
-<section id="cfp" class="section section-alt">
+<section id="cfp" class="section">
   <div class="container">
     <header class="section-header" data-reveal>
       <span class="section-tag">CFP</span>
       <h2 class="section-title">Call for Papers</h2>
-      <p class="section-subtitle">We invite original, previously unpublished work addressing, but not limited to, the following topics.</p>
     </header>
-
-    <div class="topics-grid" data-reveal>
-      <article class="topic-card">
-        <div class="topic-icon"><i class="fas fa-cube"></i></div>
-        <h3>3D Reconstruction &amp; Neural Rendering</h3>
-        <p>AI-driven methods for medical 3D reconstruction, NeRF and Gaussian Splatting approaches, and neural rendering techniques applied to clinical imaging data.</p>
-      </article>
-      <article class="topic-card">
-        <div class="topic-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
-        <h3>Generative AI for Medical 3D</h3>
-        <p>Diffusion models, GANs, and other generative architectures for synthesising, augmenting, or simulating medical and neural 3D data.</p>
-      </article>
-      <article class="topic-card">
-        <div class="topic-icon"><i class="fas fa-language"></i></div>
-        <h3>Vision-Language Models</h3>
-        <p>VLMs and multi-modal foundation models for 3D understanding and grounding of medical images, enabling richer cross-modal representations.</p>
-      </article>
-      <article class="topic-card">
-        <div class="topic-icon"><i class="fas fa-vr-cardboard"></i></div>
-        <h3>XR Visualisation &amp; Simulation</h3>
-        <p>Extended reality (AR/VR/MR) tools for immersive medical visualisation, surgical training, simulation, and patient-specific planning.</p>
-      </article>
-      <article class="topic-card">
-        <div class="topic-icon"><i class="fas fa-network-wired"></i></div>
-        <h3>Foundation &amp; Self-Supervised Models</h3>
-        <p>Large-scale pre-training and self-supervised learning strategies adapted for medical 3D vision with limited or no labelled data.</p>
-      </article>
-      <article class="topic-card">
-        <div class="topic-icon"><i class="fas fa-database"></i></div>
-        <h3>Sparse, Noisy &amp; Heterogeneous Data</h3>
-        <p>Methods that address the inherent clinical challenges of data scarcity, imaging noise, anatomical variability, and multi-modal heterogeneity.</p>
-      </article>
-    </div>
 
     <div class="cfp-bottom" data-reveal>
       <div class="cfp-guidelines">
         <h3><i class="fas fa-file-lines"></i> Submission Guidelines</h3>
         <ul>
-          <li><i class="fas fa-check"></i> Papers must follow the <strong>ECCV 2026 author guidelines</strong></li>
-          <li><i class="fas fa-check"></i> Standard <strong>double-blind</strong> review — at least <strong>3 independent reviewers</strong> per submission</li>
-          <li><i class="fas fa-check"></i> Accepted papers published in the <strong>ECCV 2026 Workshop Proceedings</strong></li>
-          <li><i class="fas fa-check"></i> Camera-ready deadline coincides with the <strong>main ECCV 2026</strong> camera-ready deadline</li>
-          <li><i class="fas fa-check"></i> Submission system: <strong>TBD</strong></li>
+          <li><i class="fas fa-check"></i> All papers should be submitted at: <strong>TBD</strong></li>
+          <li><i class="fas fa-check"></i> Papers must be prepared according to the <a href="https://eccv.ecva.net/Conferences/2026/SubmissionPolicies" target="_blank" rel="noopener"><strong>ECCV Submission Guidelines</strong></a>. All papers will be reviewed by at least two reviewers with double-blind peer-review policy. Manuscripts must be submitted as PDF documents following the <a href="https://www.overleaf.com/read/fkngkknmbycc#8e2acb" target="_blank" rel="noopener"><strong>ECCV 2026 Submission Template</strong></a>.</li>
+          <li><i class="fas fa-check"></i> Submissions are limited to <strong>14 pages</strong>. Additional pages containing only cited references are allowed. Supplemental materials are also allowed, in PDF format.</li>
+          <li><i class="fas fa-check"></i> Authors are further urged to consult ECCV 2026's <strong>ethics guidelines</strong>, recommended best practices, and FAQs.</li>
         </ul>
       </div>
       <div class="cfp-dates">
         <h3><i class="fas fa-calendar-alt"></i> Key Dates</h3>
         <div class="dates-list">
           <div class="date-row">
-            <span class="dr-label">ECCV main notification</span>
-            <span class="dr-date">June 17, 2026</span>
-          </div>
-          <div class="date-row">
             <span class="dr-label">Submission deadline</span>
-            <span class="dr-date tbd">TBD</span>
+            <span class="dr-date">July 10, 2026</span>
           </div>
           <div class="date-row">
-            <span class="dr-label">Author notification</span>
-            <span class="dr-date tbd">TBD</span>
+            <span class="dr-label">Decision to authors</span>
+            <span class="dr-date">August 6, 2026</span>
           </div>
           <div class="date-row">
             <span class="dr-label">Camera-ready deadline</span>
-            <span class="dr-date tbd">TBD</span>
+            <span class="dr-date">August 15, 2026</span>
           </div>
           <div class="date-row date-highlight">
-            <span class="dr-label">Workshop day</span>
-            <span class="dr-date">September 3, 2026</span>
+            <span class="dr-label">Workshop days</span>
+            <span class="dr-date">September 8–9, 2026</span>
           </div>
         </div>
         <p class="dates-note">All deadlines at 23:59 Anywhere on Earth (AoE).</p>
@@ -241,6 +205,10 @@
         </div>
         <h3>Federico Bolelli</h3>
         <p class="speaker-org">University of Modena and Reggio Emilia, Italy</p>
+        <div class="speaker-bio">
+          <p>Tenure-Track Assistant Professor at the University of Modena and Reggio Emilia, where he is part of the AImagelab research group. He earned his B.Sc. and M.Sc. degrees (cum laude) in Computer Engineering and completed his Ph.D. in ICT at the same university.</p>
+          <p>His research spans image processing, algorithm optimization, and medical imaging, including optimization of binary image processing on CPU/GPU, skin lesion segmentation for melanoma detection, CBCT maxillofacial segmentation, and whole-slide image analysis. He contributed to the H2020 DeepHealth project (co-leading the European Computer Vision Library, ECVL) and has been involved in the H2020 DECIDER project since 2022. Federico chairs the IAPR Technical Committee (TC22) on Reproducible Research and is a member of IEEE, MICCAI, and CVPL. He serves as Associate Editor for <em>Pattern Recognition</em> and <em>Simulation &amp; Game</em>.</p>
+        </div>
       </article>
 
       <article class="speaker-card" data-reveal>
@@ -248,7 +216,107 @@
           <img src="speakers_images/ouasfi.jpg" alt="Amine Ouasfi">
         </div>
         <h3>Amine Ouasfi</h3>
-        <p class="speaker-org">Meta, France</p>
+        <p class="speaker-org">INRIA, France</p>
+        <div class="speaker-bio">
+          <p>Computer Vision PhD Student at INRIA, France, working with Prof. Adnane Boukhayma and Prof. Eric Marchand. His research focuses on deep learning for 3D reconstruction (creating virtual twins) and 3D generative AI.</p>
+          <p>He has worked on improving generalizable implicit reconstruction models and implicit representation learning from sparse inputs (point clouds, multi-view images). He is currently exploring how to improve the controllability of video generation for 3D-oriented tasks.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ORGANIZING COMMITTEE
+═══════════════════════════════════════════ -->
+<section id="organizers" class="section">
+  <div class="container">
+    <header class="section-header" data-reveal>
+      <span class="section-tag">Team</span>
+      <h2 class="section-title">Organizing Committee</h2>
+    </header>
+
+    <div class="organizers-grid">
+
+      <article class="org-card" data-reveal>
+        <div class="org-photo">
+          <img src="org_images/balloni.jpg" alt="Emanuele Balloni">
+        </div>
+        <h3>Emanuele Balloni</h3>
+        <p class="org-inst">GAP Lab, Università Politecnica delle Marche, Italy</p>
+      </article>
+
+      <article class="org-card" data-reveal>
+        <div class="org-photo">
+          <img src="org_images/casarano.jpg" alt="Pasquale Cascarano">
+        </div>
+        <h3>Pasquale Cascarano</h3>
+        <p class="org-inst">University of Bologna, Italy</p>
+      </article>
+
+      <article class="org-card" data-reveal>
+        <div class="org-photo">
+          <img src="org_images/paolanti.webp" alt="Marina Paolanti">
+        </div>
+        <h3>Marina Paolanti</h3>
+        <p class="org-inst">University of Macerata, Italy</p>
+      </article>
+
+      <article class="org-card" data-reveal>
+        <div class="org-photo">
+          <img src="org_images/marfia.webp" alt="Gustavo Marfia">
+        </div>
+        <h3>Gustavo Marfia</h3>
+        <p class="org-inst">University of Bologna, Italy</p>
+      </article>
+
+      <article class="org-card" data-reveal>
+        <div class="org-photo">
+          <img src="org_images/pierdicca.png" alt="Roberto Pierdicca">
+        </div>
+        <h3>Roberto Pierdicca</h3>
+        <p class="org-inst">GAP Lab, Università Politecnica delle Marche, Italy</p>
+      </article>
+
+      <article class="org-card" data-reveal>
+        <div class="org-photo">
+          <img src="org_images/frontoni.jpg" alt="Emanuele Frontoni">
+        </div>
+        <h3>Emanuele Frontoni</h3>
+        <p class="org-inst">University of Macerata, Italy</p>
+      </article>
+
+      <article class="org-card" data-reveal>
+        <div class="org-photo">
+          <img src="org_images/santarnecchi.png" alt="Emiliano Santarnecchi">
+        </div>
+        <h3>Emiliano Santarnecchi</h3>
+        <p class="org-inst">Harvard Medical School, USA</p>
+      </article>
+
+      <article class="org-card" data-reveal>
+        <div class="org-photo">
+          <img src="org_images/chen.jpg" alt="Chu Chen">
+        </div>
+        <h3>Chu Chen</h3>
+        <p class="org-inst">City University of Hong Kong, HK</p>
+      </article>
+
+      <article class="org-card" data-reveal>
+        <div class="org-photo">
+          <img src="org_images/feldman.jpg" alt="Paula Feldman">
+        </div>
+        <h3>Paula Feldman</h3>
+        <p class="org-inst">Universidad Torcuato Di Tella, Argentina</p>
+      </article>
+
+      <article class="org-card" data-reveal>
+        <div class="org-photo">
+          <img src="org_images/graf.jpg" alt="Simon Graf">
+        </div>
+        <h3>Simon Graf</h3>
+        <p class="org-inst">University Medicine Halle (Saale), Germany</p>
       </article>
 
     </div>
@@ -263,7 +331,7 @@
     <header class="section-header" data-reveal>
       <span class="section-tag">Program</span>
       <h2 class="section-title">Workshop Schedule</h2>
-      <p class="section-subtitle">September 3, 2026 — Full schedule to be announced.</p>
+      <p class="section-subtitle">September 8–9, 2026 — Full schedule to be announced.</p>
     </header>
 
     <div class="schedule-wrap" data-reveal>
@@ -324,102 +392,6 @@
 </section>
 
 <!-- ═══════════════════════════════════════════
-     ORGANIZING COMMITTEE
-═══════════════════════════════════════════ -->
-<section id="organizers" class="section">
-  <div class="container">
-    <header class="section-header" data-reveal>
-      <span class="section-tag">Team</span>
-      <h2 class="section-title">Organizing Committee</h2>
-    </header>
-
-    <div class="organizers-grid">
-
-      <article class="org-card" data-reveal>
-        <div class="org-photo">
-          <img src="org_images/balloni.jpg" alt="Emanuele Balloni">
-        </div>
-        <h3>Emanuele Balloni</h3>
-        <p class="org-inst">Università Politecnica delle Marche, Italy</p>
-      </article>
-
-      <article class="org-card" data-reveal>
-        <div class="org-photo">
-          <img src="org_images/casarano.jpg" alt="Pasquale Cascarano">
-        </div>
-        <h3>Pasquale Cascarano</h3>
-        <p class="org-inst">University of Bologna, Italy</p>
-      </article>
-
-      <article class="org-card" data-reveal>
-        <div class="org-photo">
-          <img src="org_images/paolanti.webp" alt="Marina Paolanti">
-        </div>
-        <h3>Marina Paolanti</h3>
-        <p class="org-inst">University of Macerata, Italy</p>
-      </article>
-
-      <article class="org-card" data-reveal>
-        <div class="org-photo">
-          <img src="org_images/marfia.webp" alt="Gustavo Marfia">
-        </div>
-        <h3>Gustavo Marfia</h3>
-        <p class="org-inst">University of Bologna, Italy</p>
-      </article>
-
-      <article class="org-card" data-reveal>
-        <div class="org-photo">
-          <img src="org_images/pierdicca.png" alt="Roberto Pierdicca">
-        </div>
-        <h3>Roberto Pierdicca</h3>
-        <p class="org-inst">Università Politecnica delle Marche, Italy</p>
-      </article>
-
-      <article class="org-card" data-reveal>
-        <div class="org-photo">
-          <img src="org_images/frontoni.jpg" alt="Emanuele Frontoni">
-        </div>
-        <h3>Emanuele Frontoni</h3>
-        <p class="org-inst">University of Macerata, Italy</p>
-      </article>
-
-      <article class="org-card" data-reveal>
-        <div class="org-photo">
-          <img src="org_images/santarnecchi.png" alt="Emiliano Santarnecchi">
-        </div>
-        <h3>Emiliano Santarnecchi</h3>
-        <p class="org-inst">Harvard Medical School / MGH, USA</p>
-      </article>
-
-      <article class="org-card" data-reveal>
-        <div class="org-photo">
-          <img src="org_images/chen.jpg" alt="Chu Chen">
-        </div>
-        <h3>Chu Chen</h3>
-        <p class="org-inst">City University of Hong Kong, HK</p>
-      </article>
-
-      <article class="org-card" data-reveal>
-        <div class="org-photo">
-          <img src="org_images/feldman.jpg" alt="Paula Feldman">
-        </div>
-        <h3>Paula Feldman</h3>
-        <p class="org-inst">Universidad Torcuato Di Tella, Argentina</p>
-      </article>
-
-      <article class="org-card" data-reveal>
-        <div class="org-photo">
-          <img src="org_images/graf.jpg" alt="Simon Graf">
-        </div>
-        <h3>Simon Graf</h3>
-        <p class="org-inst">University Medicine Halle (Saale), Germany</p>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════
      FOOTER
 ═══════════════════════════════════════════ -->
 <footer id="footer">
@@ -428,7 +400,7 @@
       <span class="footer-logo">
         <span class="logo-primary">AI4</span><span class="logo-accent">M3D</span>
       </span>
-      <p>Artificial Intelligence for Medical 3D Vision<br>ECCV 2026 Workshop &nbsp;·&nbsp; September 3, 2026</p>
+      <p>Artificial Intelligence for Medical 3D Vision<br>ECCV 2026 Workshop &nbsp;·&nbsp; September 8–9, 2026</p>
     </div>
 
     <div class="footer-nav">
@@ -455,8 +427,8 @@
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
-      <span>&copy; 2026 AI4M3D Organizing Committee</span>
-      <span>Co-located with <strong>ECCV 2026</strong></span>
+      <img src="ECCV_2026_Logo.svg" alt="ECCV 2026" class="footer-eccv-logo">
+      <span>AI4M3D is organized in conjunction with <strong>ECCV 2026</strong></span>
     </div>
   </div>
 </footer>

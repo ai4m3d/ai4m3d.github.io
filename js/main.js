@@ -110,12 +110,8 @@
     });
   });
 
-  // ─── Staggered card reveal ────────────────────────────────
-  // Give each card inside grids a slight delay
-  document.querySelectorAll(
-    '.topics-grid .topic-card, .organizers-grid .org-card, .related-grid .related-card'
-  ).forEach((card, i) => {
-    card.setAttribute('data-reveal', '');
+  // ─── Staggered card reveal delay ─────────────────────────
+  document.querySelectorAll('.topics-grid .topic-card, .organizers-grid .org-card').forEach((card, i) => {
     card.style.transitionDelay = `${(i % 3) * 0.08}s`;
   });
 
