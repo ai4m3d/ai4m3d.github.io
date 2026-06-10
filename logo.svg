@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 84" fill="none" role="img" aria-label="AI4M3D Workshop Logo">
+  <defs>
+    <!-- Top face: cyan gradient -->
+    <linearGradient id="g-top" x1="42" y1="8" x2="42" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <!-- Left face: deep navy -->
+    <linearGradient id="g-left" x1="14" y1="24" x2="42" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f2744"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+    <!-- Right face: blue -->
+    <linearGradient id="g-right" x1="42" y1="24" x2="70" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2484cc"/>
+      <stop offset="100%" stop-color="#155d8f"/>
+    </linearGradient>
+    <!-- Ambient glow behind cube -->
+    <radialGradient id="g-glow" cx="42" cy="40" r="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Clip region for top face scan lines -->
+    <clipPath id="clip-top">
+      <polygon points="42,8 70,24 42,40 14,24"/>
+    </clipPath>
+  </defs>
+
+  <!-- Soft ambient glow -->
+  <ellipse cx="42" cy="40" rx="36" ry="34" fill="url(#g-glow)"/>
+
+  <!-- ── Cube faces ── -->
+  <!-- Left (darkest) -->
+  <polygon points="14,24 42,40 42,72 14,56" fill="url(#g-left)"/>
+  <!-- Right (blue) -->
+  <polygon points="42,40 70,24 70,56 42,72" fill="url(#g-right)"/>
+  <!-- Top (cyan) — painted last so it sits visually on top -->
+  <polygon points="42,8 70,24 42,40 14,24" fill="url(#g-top)"/>
+
+  <!-- ── Scan lines on top face (medical imaging feel) ── -->
+  <g clip-path="url(#clip-top)">
+    <line x1="0" y1="17" x2="84" y2="17" stroke="rgba(255,255,255,0.30)" stroke-width="0.65"/>
+    <line x1="0" y1="32" x2="84" y2="32" stroke="rgba(255,255,255,0.18)" stroke-width="0.65"/>
+  </g>
+
+  <!-- ── Edge highlights ── -->
+  <!-- Brightest: top-right edge -->
+  <line x1="42" y1="8"  x2="70" y2="24" stroke="#a5f3fc" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- Dimmer: top-left edge -->
+  <line x1="42" y1="8"  x2="14" y2="24" stroke="#e0f7fa" stroke-width="0.8" stroke-linecap="round" opacity="0.55"/>
+  <!-- Subtle vertical spine -->
+  <line x1="42" y1="40" x2="42" y2="72" stroke="rgba(255,255,255,0.07)" stroke-width="0.5"/>
+  <!-- Outer silhouette for depth -->
+  <polyline points="14,24 14,56 42,72 70,56 70,24" stroke="rgba(255,255,255,0.08)" stroke-width="0.5" fill="none"/>
+
+  <!-- ── Wordmark ── -->
+  <text font-family="'Inter', system-ui, 'Helvetica Neue', Arial, sans-serif"
+        font-weight="900" font-size="38" letter-spacing="-1.5">
+    <tspan x="86" y="51" fill="#f1f5f9">AI4</tspan><tspan fill="#06b6d4">M3D</tspan>
+  </text>
+
+  <!-- ── Subtitle ── -->
+  <text x="88" y="66"
+        font-family="'Inter', system-ui, 'Helvetica Neue', Arial, sans-serif"
+        font-weight="500" font-size="9.5" fill="#64748b" letter-spacing="0.13em">ECCV 2026 · WORKSHOP</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="AI4M3D Icon">
+  <defs>
+    <linearGradient id="gi-top" x1="32" y1="6" x2="32" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="gi-left" x1="8" y1="18" x2="32" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f2744"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+    <linearGradient id="gi-right" x1="32" y1="18" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2484cc"/>
+      <stop offset="100%" stop-color="#155d8f"/>
+    </linearGradient>
+    <radialGradient id="gi-glow" cx="32" cy="32" r="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="ci-top">
+      <polygon points="32,6 56,18 32,30 8,18"/>
+    </clipPath>
+  </defs>
+
+  <ellipse cx="32" cy="32" rx="28" ry="26" fill="url(#gi-glow)"/>
+
+  <polygon points="8,18 32,30 32,58 8,46" fill="url(#gi-left)"/>
+  <polygon points="32,30 56,18 56,46 32,58" fill="url(#gi-right)"/>
+  <polygon points="32,6 56,18 32,30 8,18" fill="url(#gi-top)"/>
+
+  <g clip-path="url(#ci-top)">
+    <line x1="0" y1="13" x2="64" y2="13" stroke="rgba(255,255,255,0.30)" stroke-width="0.7"/>
+    <line x1="0" y1="23" x2="64" y2="23" stroke="rgba(255,255,255,0.18)" stroke-width="0.7"/>
+  </g>
+
+  <line x1="32" y1="6"  x2="56" y2="18" stroke="#a5f3fc" stroke-width="1.4" stroke-linecap="round"/>
+  <line x1="32" y1="6"  x2="8"  y2="18" stroke="#e0f7fa" stroke-width="0.8" stroke-linecap="round" opacity="0.55"/>
+  <polyline points="8,18 8,46 32,58 56,46 56,18" stroke="rgba(255,255,255,0.08)" stroke-width="0.5" fill="none"/>
+</svg>
