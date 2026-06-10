@@ -47,7 +47,7 @@
   });
 
   // ─── Active nav link on scroll ────────────────────────────
-  const sections = document.querySelectorAll('section[id], footer[id]');
+  const sections = document.querySelectorAll('section[id], footer[id="footer"]');
   const links    = navLinks.querySelectorAll('a[href^="#"]');
 
   function setActiveLink() {
