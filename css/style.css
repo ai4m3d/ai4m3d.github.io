@@ -576,6 +576,28 @@ button { cursor: pointer; font-family: inherit; }
   text-align: justify;
 }
 
+.topic-subtopics {
+  display: flex;
+  flex-direction: column;
+  gap: .45rem;
+}
+.topic-subtopics li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: .82rem;
+  color: var(--c-text-muted);
+  line-height: 1.5;
+}
+.topic-subtopics li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: .55rem;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--c-cyan);
+}
+
 .cfp-bottom {
   display: grid;
   grid-template-columns: 1fr 1fr;
