@@ -210,11 +210,18 @@ button { cursor: pointer; font-family: inherit; }
 
 .nav-logo {
   display: flex;
-  align-items: baseline;
-  gap: .35rem;
+  align-items: center;
+  gap: .4rem;
   font-size: 1.3rem;
   font-weight: 900;
   letter-spacing: -.03em;
+  flex-shrink: 0;
+}
+.logo-wordmark { line-height: 1; }
+.nav-logo-mark {
+  width: 32px;
+  height: auto;
+  border-radius: var(--r-sm);
   flex-shrink: 0;
 }
 .logo-primary { color: #fff; transition: color var(--trans); }
@@ -395,6 +402,15 @@ button { cursor: pointer; font-family: inherit; }
   text-align: center;
 }
 
+.hero-logo-wrap {
+  margin-bottom: 1.75rem;
+  animation: fadeInDown .8s var(--ease) both;
+}
+.hero-logo-img {
+  width: 160px;
+  height: auto;
+}
+
 .hero-eyebrow {
   font-size: .8rem;
   font-weight: 700;
@@ -402,7 +418,7 @@ button { cursor: pointer; font-family: inherit; }
   text-transform: uppercase;
   color: rgba(255,255,255,.55);
   margin-bottom: 1.25rem;
-  animation: fadeInDown .8s var(--ease) both;
+  animation: fadeInDown .8s var(--ease) .05s both;
 }
 
 .hero-wordmark {
@@ -1224,8 +1240,9 @@ footer {
 
 /* ── Mobile ──────────────────────────────────────────────── */
 @media (max-width: 480px) {
-  .hero-wordmark { font-size: clamp(3.5rem, 18vw, 5rem); }
-  .hero-content  { padding-top: 90px; }
+  .hero-wordmark  { font-size: clamp(3.5rem, 18vw, 5rem); }
+  .hero-content   { padding-top: 90px; }
+  .hero-logo-img  { width: 120px; }
   .hero-cta .btn { justify-content: center; }
 
   /* Disable justify on narrow columns — creates ugly spacing */
