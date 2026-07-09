@@ -692,6 +692,22 @@ button { cursor: pointer; font-family: inherit; }
 .dr-date.tbd { color: rgba(255,255,255,.4); font-style: italic; font-weight: 400; }
 .date-highlight .dr-label { color: rgba(255,255,255,.8); font-weight: 600; }
 .date-highlight .dr-date { color: var(--c-cyan); }
+.date-extended .dr-label { color: rgba(255,255,255,.8); font-weight: 600; }
+.date-extended .dr-date s { color: rgba(255,255,255,.35); font-weight: 400; }
+.date-extended .dr-date { color: var(--c-cyan); }
+.dr-extended-badge {
+  display: inline-block;
+  margin-left: .45rem;
+  padding: .1em .45em;
+  background: var(--c-cyan);
+  color: #0a0f1e;
+  font-size: .65rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  border-radius: 3px;
+  vertical-align: middle;
+}
 .dates-note {
   font-size: .75rem;
   color: rgba(255,255,255,.3);
