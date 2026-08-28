@@ -911,10 +911,10 @@ button { cursor: pointer; font-family: inherit; }
   vertical-align: middle;
 }
 
-.sched-time {
+.schedule-table .sched-time {
   font-size: .8rem;
-  font-weight: 700;
-  color: var(--c-text-muted);
+  font-weight: 800;
+  color: var(--c-navy);
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -987,8 +987,8 @@ button { cursor: pointer; font-family: inherit; }
 .sched-subitem:hover {
   background: rgba(6, 182, 212, .03) !important;
 }
-.sched-subtime {
-  font-weight: 600;
+.schedule-table .sched-subtime {
+  font-weight: 500;
   color: var(--c-text-muted);
   font-size: .775rem;
 }
