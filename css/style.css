@@ -892,7 +892,8 @@ button { cursor: pointer; font-family: inherit; }
   color: rgba(255,255,255,.6);
   text-align: left;
 }
-.schedule-table thead th:first-child { width: 100px; }
+.schedule-table thead th:first-child { width: 140px; }
+.schedule-table thead th:nth-child(2) { width: 170px; }
 
 .schedule-table tbody tr {
   border-bottom: 1px solid var(--c-border);
@@ -918,6 +919,21 @@ button { cursor: pointer; font-family: inherit; }
   white-space: nowrap;
 }
 
+.sched-title {
+  color: var(--c-navy);
+  font-weight: 600;
+  display: block;
+  line-height: 1.4;
+  margin-bottom: .25rem;
+}
+
+.sched-authors {
+  font-size: .8rem;
+  color: var(--c-text-muted);
+  line-height: 1.4;
+  display: block;
+}
+
 .sched-badge {
   display: inline-flex;
   align-items: center;
@@ -929,12 +945,66 @@ button { cursor: pointer; font-family: inherit; }
   white-space: nowrap;
 }
 .sched-badge i { font-size: .7rem; }
-.sched-badge.opening { background: rgba(6,182,212,.1);  color: #0891b2; }
-.sched-badge.talk    { background: rgba(79,70,229,.1);   color: var(--c-indigo); }
-.sched-badge.oral    { background: rgba(26,108,168,.1);  color: var(--c-blue); }
-.sched-badge.break   { background: rgba(100,116,139,.1); color: var(--c-text-muted); }
-.sched-badge.poster  { background: rgba(5,150,105,.1);   color: #059669; }
-.sched-badge.closing { background: rgba(10,22,40,.08);   color: var(--c-navy); }
+.sched-badge.opening   { background: rgba(6,182,212,.1);   color: #0891b2; }
+.sched-badge.talk      { background: rgba(79,70,229,.1);    color: var(--c-indigo); }
+.sched-badge.oral      { background: rgba(26,108,168,.1);   color: var(--c-blue); }
+.sched-badge.spotlight { background: rgba(245,158,11,.12);  color: #d97706; }
+.sched-badge.break     { background: rgba(100,116,139,.1);  color: var(--c-text-muted); }
+.sched-badge.poster    { background: rgba(5,150,105,.1);    color: #059669; }
+.sched-badge.closing   { background: rgba(10,22,40,.08);    color: var(--c-navy); }
+
+/* Grouped Session Headers & Sub-items */
+.sched-session-header {
+  background: #f8fafc !important;
+  border-top: 2px solid var(--c-border);
+  border-bottom: 1px solid var(--c-border);
+}
+.sched-session-header td {
+  padding: .85rem 1.25rem;
+}
+.sched-session-header .sched-time {
+  font-weight: 800;
+  color: var(--c-navy);
+}
+.sched-session-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+.sched-session-info {
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--c-text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+}
+.sched-subitem {
+  background: var(--c-white);
+}
+.sched-subitem:hover {
+  background: rgba(6, 182, 212, .03) !important;
+}
+.sched-subtime {
+  font-weight: 600;
+  color: var(--c-text-muted);
+  font-size: .775rem;
+}
+.sched-paper-cell {
+  position: relative;
+}
+
+.sched-subitem.sched-spotlight-item .sched-paper-cell {
+  border-left: 3px solid #f59e0b;
+  padding-left: 1.25rem;
+}
+
+.sched-subitem.sched-oral-item .sched-paper-cell {
+  border-left: 3px solid var(--c-blue);
+  padding-left: 1.25rem;
+}
 
 /* ═══════════════════════════════════════════════════════════
    ORGANIZERS
