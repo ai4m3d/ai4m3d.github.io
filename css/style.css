@@ -441,7 +441,8 @@ button { cursor: pointer; font-family: inherit; }
   animation: fadeInUp .8s var(--ease) .2s both;
 }
 
-.hero-date {
+.hero-date,
+.hero-location {
   display: inline-flex;
   align-items: center;
   gap: .6rem;
@@ -452,10 +453,15 @@ button { cursor: pointer; font-family: inherit; }
   border: 1px solid rgba(255,255,255,.15);
   padding: .5rem 1.25rem;
   border-radius: var(--r-full);
-  margin-bottom: 2rem;
+  margin-bottom: .6rem;
   animation: fadeInUp .8s var(--ease) .3s both;
 }
-.hero-date i { color: var(--c-cyan); }
+.hero-location {
+  margin-bottom: 2rem;
+  animation-delay: .35s;
+}
+.hero-date i,
+.hero-location i { color: var(--c-cyan); }
 
 .hero-cta {
   display: flex;
@@ -911,7 +917,7 @@ button { cursor: pointer; font-family: inherit; }
   vertical-align: middle;
 }
 
-.schedule-table .sched-time {
+.sched-time {
   font-size: .8rem;
   font-weight: 800;
   color: var(--c-navy);
@@ -987,7 +993,7 @@ button { cursor: pointer; font-family: inherit; }
 .sched-subitem:hover {
   background: rgba(6, 182, 212, .03) !important;
 }
-.schedule-table .sched-subtime {
+.sched-subtime {
   font-weight: 500;
   color: var(--c-text-muted);
   font-size: .775rem;
